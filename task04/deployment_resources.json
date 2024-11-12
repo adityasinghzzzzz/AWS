@@ -26,9 +26,7 @@
     "resource_type": "iam_policy"
   },
   "sns_handler-role": {
-    "predefined_policies": [
-      "AWSLambdaSQSQueueExecutionRole"
-    ],
+    "predefined_policies": ["AWSLambdaSQSQueueExecutionRole"],
     "principal_service": "lambda",
     "custom_policies": [
       "lambda-basic-execution"
@@ -36,9 +34,7 @@
     "resource_type": "iam_role"
   },
   "sqs_handler-role": {
-    "predefined_policies": [
-      "AWSLambdaSQSQueueExecutionRole"
-    ],
+    "predefined_policies": ["AWSLambdaSQSQueueExecutionRole"],
     "principal_service": "lambda",
     "custom_policies": [
       "lambda-basic-execution"
@@ -60,15 +56,5 @@
     "resource_type": "sns_topic",
     "region": "eu-central-1",
     "event_sources": []
-  },
-  "task5_api": {
-    "resource_type": "api_gateway",
-    "deploy_stage": "api",
-    "dependencies": [],
-    "resources": {
-      "/events": {
-        "enable_cors": false
-      }
-    }
   }
 }

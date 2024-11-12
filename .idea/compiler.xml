@@ -6,10 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="SyndicateTasks" />
+        <module name="task07" />
+        <module name="task05" />
+        <module name="task06" />
+        <module name="task04" />
+        <module name="task01" />
         <module name="task02" />
-        <module name="task08" />
-        <module name="openmeteo" />
-        <module name="task03" />
       </profile>
     </annotationProcessing>
   </component>

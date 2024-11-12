@@ -1,7 +1,7 @@
 {
   "uuid_generator" : {
     "name" : "uuid_generator",
-    "lambda_path" : "C:\\Users\\mantasha_qamar\\Desktop\\Project\\demo\\task07",
+    "lambda_path" : "C:\\Users\\sakshikishor_kothurk\\AWS\\SyndicateTasks\\task07",
     "version" : "1.0.0",
     "func_name" : "com.task07.UuidGenerator",
     "deployment_package" : "task07-1.0.0.jar",
@@ -22,10 +22,10 @@
       "target_rule" : "uuid_trigger"
     } ],
     "env_variables" : {
-      "region" : "${region}",
       "target_bucket" : "${target_bucket}"
     },
     "publish_version" : false,
+    "alias" : "${lambdas_alias_name}",
     "logs_expiration" : "${logs_expiration}",
     "snap_start" : "None"
   }

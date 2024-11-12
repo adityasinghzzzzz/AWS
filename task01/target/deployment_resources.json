@@ -1,10 +1,10 @@
 {
   "hello_world" : {
     "name" : "hello_world",
-    "lambda_path" : "C:\\Users\\sakshikishor_kothurk\\AWS\\SyndicateTasks\\task02",
+    "lambda_path" : "C:\\Users\\sakshikishor_kothurk\\AWS\\SyndicateTasks\\task01",
     "version" : "1.0.0",
-    "func_name" : "com.task02.HelloWorld",
-    "deployment_package" : "task02-1.0.0.jar",
+    "func_name" : "com.task01.HelloWorld",
+    "deployment_package" : "task01-1.0.0.jar",
     "resource_type" : "lambda",
     "runtime" : "java11",
     "architectures" : [ "x86_64" ],

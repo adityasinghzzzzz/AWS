@@ -22,7 +22,8 @@
       ],
       "Version": "2012-10-17"
     },
-    "resource_type": "iam_policy"
+    "resource_type": "iam_policy",
+    "tags": {}
   },
   "hello_world-role": {
     "predefined_policies": [],
@@ -30,7 +31,8 @@
     "custom_policies": [
       "lambda-basic-execution"
     ],
-    "resource_type": "iam_role"
+    "resource_type": "iam_role",
+    "tags": {}
   },
   "task3_api": {
     "resource_type": "api_gateway",
@@ -38,6 +40,7 @@
     "dependencies": [],
     "resources": {
       "/hello": {
+        "enable_cors": false,
         "GET": {
           "authorization_type": "NONE",
           "integration_type": "lambda",
@@ -51,22 +54,7 @@
         }
       }
     },
-    "minimum_compression_size": 0
-  },
-  "sqs_handler-role": {
-    "predefined_policies": [],
-    "principal_service": "lambda",
-    "custom_policies": [
-      "lambda-basic-execution"
-    ],
-    "resource_type": "iam_role"
-  },
-  "sns_handler-role": {
-    "predefined_policies": [],
-    "principal_service": "lambda",
-    "custom_policies": [
-      "lambda-basic-execution"
-    ],
-    "resource_type": "iam_role"
+    "minimum_compression_size": 0,
+    "tags": {}
   }
 }

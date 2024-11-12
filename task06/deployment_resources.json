@@ -14,11 +14,7 @@
             "dynamodb:DeleteItem",
             "ssm:PutParameter",
             "ssm:GetParameter",
-            "kms:Decrypt",
-            "dynamodb:GetRecords",
-            "dynamodb:GetShardIterator",
-            "dynamodb:DescribeStream",
-            "dynamodb:ListStreams"
+            "kms:Decrypt"
           ],
           "Effect": "Allow",
           "Resource": "*"
@@ -29,7 +25,9 @@
     "resource_type": "iam_policy"
   },
   "audit_producer-role": {
-    "predefined_policies": [],
+    "predefined_policies": [
+      "AmazonDynamoDBFullAccess"
+    ],
     "principal_service": "lambda",
     "custom_policies": [
       "lambda-basic-execution"
@@ -45,7 +43,7 @@
     "global_indexes": [],
     "autoscaling": []
   },
-  "Audit": {
+  "${target_table}": {
     "resource_type": "dynamodb_table",
     "hash_key_name": "id",
     "hash_key_type": "S",
@@ -53,5 +51,14 @@
     "write_capacity": 1,
     "global_indexes": [],
     "autoscaling": []
+  },
+  "uuid_generator-role": {
+    "predefined_policies": [],
+    "principal_service": "lambda",
+    "custom_policies": [
+      "lambda-basic-execution"
+    ],
+    "resource_type": "iam_role",
+    "tags": {}
   }
 }

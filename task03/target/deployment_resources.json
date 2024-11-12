@@ -1,7 +1,7 @@
 {
   "hello_world" : {
     "name" : "hello_world",
-    "lambda_path" : "C:\\Users\\mantasha_qamar\\Desktop\\Project\\demo\\task03",
+    "lambda_path" : "C:\\Users\\sakshikishor_kothurk\\AWS\\SyndicateTasks\\task03",
     "version" : "1.0.0",
     "func_name" : "com.task03.HelloWorld",
     "deployment_package" : "task03-1.0.0.jar",
@@ -16,6 +16,7 @@
     "dependencies" : [ ],
     "event_sources" : [ ],
     "env_variables" : { },
+    "tags" : { },
     "publish_version" : true,
     "alias" : "${lambdas_alias_name}",
     "logs_expiration" : "${logs_expiration}",

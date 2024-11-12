@@ -14,15 +14,7 @@
             "dynamodb:DeleteItem",
             "ssm:PutParameter",
             "ssm:GetParameter",
-            "kms:Decrypt",
-            "gateway:POST",
-            "gateway:GET",
-            "gateway:PUT",
-            "gateway:DELETE",
-            "dynamodb:GetRecords",
-            "dynamodb:GetShardIterator",
-            "dynamodb:DescribeStream",
-            "dynamodb:ListStreams"
+            "kms:Decrypt"
           ],
           "Effect": "Allow",
           "Resource": "*"
@@ -33,7 +25,9 @@
     "resource_type": "iam_policy"
   },
   "api_handler-role": {
-    "predefined_policies": [],
+    "predefined_policies": [
+      "AmazonDynamoDBFullAccess"
+    ],
     "principal_service": "lambda",
     "custom_policies": [
       "lambda-basic-execution"
@@ -59,35 +53,12 @@
           "default_error_pattern": true
         }
       }
-    },
-    "minimum_compression_size": 0
+    }
   },
-  "Events": {
+  "${target_table}": {
     "resource_type": "dynamodb_table",
     "hash_key_name": "id",
     "hash_key_type": "S",
-    "read_capacity": 1,
-    "write_capacity": 1,
-    "global_indexes": [],
-    "autoscaling": []
-  },
-  "Configuration": {
-    "resource_type": "dynamodb_table",
-    "hash_key_name": "Id",
-    "hash_key_type": "N",
-    "sort_key_name": "Category",
-    "sort_key_type": "S",
-    "read_capacity": 1,
-    "write_capacity": 1,
-    "global_indexes": [],
-    "autoscaling": []
-  },
-  "Audit": {
-    "resource_type": "dynamodb_table",
-    "hash_key_name": "Id",
-    "hash_key_type": "N",
-    "sort_key_name": "Category",
-    "sort_key_type": "S",
     "read_capacity": 1,
     "write_capacity": 1,
     "global_indexes": [],

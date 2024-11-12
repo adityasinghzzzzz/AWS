@@ -1,7 +1,7 @@
 {
   "sns_handler" : {
     "name" : "sns_handler",
-    "lambda_path" : "C:\\Users\\mantasha_qamar\\Desktop\\Project\\demo\\task04",
+    "lambda_path" : "C:\\Users\\sakshikishor_kothurk\\AWS\\SyndicateTasks\\task04",
     "version" : "1.0.0",
     "func_name" : "com.task04.SnsHandler",
     "deployment_package" : "task04-1.0.0.jar",
@@ -22,13 +22,14 @@
       "target_topic" : "lambda_topic"
     } ],
     "env_variables" : { },
-    "publish_version" : false,
+    "publish_version" : true,
+    "alias" : "learn",
     "logs_expiration" : "${logs_expiration}",
     "snap_start" : "None"
   },
   "sqs_handler" : {
     "name" : "sqs_handler",
-    "lambda_path" : "C:\\Users\\mantasha_qamar\\Desktop\\Project\\demo\\task04",
+    "lambda_path" : "C:\\Users\\sakshikishor_kothurk\\AWS\\SyndicateTasks\\task04",
     "version" : "1.0.0",
     "func_name" : "com.task04.SqsHandler",
     "deployment_package" : "task04-1.0.0.jar",
@@ -50,7 +51,8 @@
       "batch_size" : 1
     } ],
     "env_variables" : { },
-    "publish_version" : false,
+    "publish_version" : true,
+    "alias" : "learn",
     "logs_expiration" : "${logs_expiration}",
     "snap_start" : "None"
   }
