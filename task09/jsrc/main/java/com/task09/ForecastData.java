@@ -1,8 +1,5 @@
 package com.task09;
 
-
-
-
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

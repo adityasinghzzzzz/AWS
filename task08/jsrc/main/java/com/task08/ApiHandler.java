@@ -18,36 +18,37 @@ import java.io.IOException;
 
 
 @LambdaHandler(lambdaName = "api_handler",
-        roleName = "api_handler-role",
-        layers = "sdk-layer",
-        runtime = DeploymentRuntime.JAVA11,
-        architecture = Architecture.ARM64,
-        logsExpiration = RetentionSetting.SYNDICATE_ALIASES_SPECIFIED
+		roleName = "api_handler-role",
+		layers = "sdk-layer",
+		runtime = DeploymentRuntime.JAVA11,
+		aliasName = "${lambdas_alias_name}",
+		architecture = Architecture.ARM64,
+		logsExpiration = RetentionSetting.SYNDICATE_ALIASES_SPECIFIED
 )
 @LambdaLayer(
-        layerName = "sdk-layer",
-        libraries = {"lib/open-meteo-api-1.0-SNAPSHOT.jar"},
-        runtime = DeploymentRuntime.JAVA11,
-        architectures = {Architecture.ARM64},
-        artifactExtension = ArtifactExtension.ZIP
+		layerName = "sdk-layer",
+		libraries = {"lib/open-meteo-api-1.0-SNAPSHOT.jar"},
+		runtime = DeploymentRuntime.JAVA11,
+		architectures = {Architecture.ARM64},
+		artifactExtension = ArtifactExtension.ZIP
 )
 @LambdaUrlConfig(
-        authType = AuthType.NONE,
-        invokeMode = InvokeMode.BUFFERED
+		authType = AuthType.NONE,
+		invokeMode = InvokeMode.BUFFERED
 )
 public class ApiHandler implements RequestHandler<Object, String> {
 
-    public String handleRequest(Object request, Context context) {
+	public String handleRequest(Object request, Context context) {
 
-        App client = new App(50.4375, 30.5);
-        JsonObject weatherData = null;
+		App client = new App(50.4375, 30.5);
+		JsonObject weatherData = null;
 
-        try {
-            weatherData = client.getWeatherForecast();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
+		try {
+			weatherData = client.getWeatherForecast();
+		} catch (IOException e) {
+			throw new RuntimeException(e);
+		}
 
-        return weatherData.toString();
-    }
+		return weatherData.toString();
+	}
 }
