@@ -1,7 +1,7 @@
 {
   "hello_world" : {
     "name" : "hello_world",
-    "lambda_path" : "C:\\Users\\sakshikishor_kothurk\\AWS\\SyndicateTasks\\task03",
+    "lambda_path" : "C:\\Programming\\Projects\\AWS\\task03",
     "version" : "1.0.0",
     "func_name" : "com.task03.HelloWorld",
     "deployment_package" : "task03-1.0.0.jar",

@@ -1,7 +1,7 @@
 {
   "sns_handler" : {
     "name" : "sns_handler",
-    "lambda_path" : "C:\\Users\\sakshikishor_kothurk\\AWS\\SyndicateTasks\\task04",
+    "lambda_path" : "C:\\Programming\\Projects\\AWS\\task04",
     "version" : "1.0.0",
     "func_name" : "com.task04.SnsHandler",
     "deployment_package" : "task04-1.0.0.jar",
@@ -29,7 +29,7 @@
   },
   "sqs_handler" : {
     "name" : "sqs_handler",
-    "lambda_path" : "C:\\Users\\sakshikishor_kothurk\\AWS\\SyndicateTasks\\task04",
+    "lambda_path" : "C:\\Programming\\Projects\\AWS\\task04",
     "version" : "1.0.0",
     "func_name" : "com.task04.SqsHandler",
     "deployment_package" : "task04-1.0.0.jar",

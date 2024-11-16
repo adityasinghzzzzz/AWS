@@ -1,7 +1,7 @@
 {
   "audit_producer" : {
     "name" : "audit_producer",
-    "lambda_path" : "C:\\Users\\sakshikishor_kothurk\\AWS\\SyndicateTasks\\task06",
+    "lambda_path" : "C:\\Programming\\Projects\\AWS\\task06",
     "version" : "1.0.0",
     "func_name" : "com.task06.AuditProducer",
     "deployment_package" : "task06-1.0.0.jar",
@@ -26,6 +26,7 @@
       "target_table" : "${target_table}"
     },
     "publish_version" : false,
+    "alias" : "${lambdas_alias_name}",
     "logs_expiration" : "${logs_expiration}",
     "snap_start" : "None"
   }

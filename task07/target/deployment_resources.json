@@ -1,7 +1,7 @@
 {
   "uuid_generator" : {
     "name" : "uuid_generator",
-    "lambda_path" : "C:\\Users\\sakshikishor_kothurk\\AWS\\SyndicateTasks\\task07",
+    "lambda_path" : "C:\\Programming\\Projects\\AWS\\task07",
     "version" : "1.0.0",
     "func_name" : "com.task07.UuidGenerator",
     "deployment_package" : "task07-1.0.0.jar",
