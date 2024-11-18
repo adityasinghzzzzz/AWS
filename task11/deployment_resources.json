@@ -12,31 +12,21 @@
             "dynamodb:PutItem",
             "dynamodb:Batch*",
             "dynamodb:DeleteItem",
+            "dynamodb:Scan",
             "ssm:PutParameter",
             "ssm:GetParameter",
-            "kms:Decrypt"
-          ],
-          "Effect": "Allow",
-          "Resource": "*"
-        }
-      ],
-      "Version": "2012-10-17"
-    },
-    "resource_type": "iam_policy"
-  },
-  "lambda-cognito-execution": {
-    "policy_content": {
-      "Statement": [
-        {
-          "Action": [
+            "kms:Decrypt",
+            "cognito-idp:DescribeUserPool",
+            "cognito-idp:GetUser",
+            "cognito-idp:ListUsers",
+            "cognito-idp:AdminCreateUser",
+            "cognito-idp:AdminInitiateAuth",
+            "cognito-idp:GetIdentityProviderByIdentifier",
             "cognito-idp:ListUserPools",
             "cognito-idp:ListUserPoolClients",
-            "cognito-idp:AdminCreateUser",
-            "cognito-idp:AdminConfirmSignUp",
-            "cognito-idp:CreateUserPoolClient",
-            "cognito-idp:AdminInitiateAuth",
             "cognito-idp:AdminRespondToAuthChallenge",
-            "dynamodb:Scan"
+            "cognito-idp:AdminConfirmSignUp",
+            "cognito-idp:AdminSetUserPassword"
           ],
           "Effect": "Allow",
           "Resource": "*"
@@ -45,35 +35,30 @@
       "Version": "2012-10-17"
     },
     "resource_type": "iam_policy"
-  },
-  "api_handler-role": {
-    "predefined_policies": [],
-    "principal_service": "lambda",
-    "custom_policies": [
-      "lambda-basic-execution",
-      "lambda-cognito-execution"
-    ],
-    "resource_type": "iam_role"
   },
   "simple-booking-userpool": {
     "resource_type": "cognito_idp",
     "password_policy": {
-      "minimum_length": 8,
+      "minimum_length": 12,
       "require_uppercase": true,
       "require_symbols": true,
       "require_lowercase": true,
       "require_numbers": true
     },
-    "auto_verified_attributes": [
-      "email"
-    ],
+    "auto_verified_attributes": [],
     "sms_configuration": {},
-    "username_attributes": [
-      "email"
-    ],
+    "username_attributes": [],
     "custom_attributes": [],
     "client": {
-      "client_name": "api_client_syndicate"
+      "client_name": "client-app",
+      "generate_secret": false,
+      "explicit_auth_flows": [
+        "ALLOW_ADMIN_USER_PASSWORD_AUTH",
+        "ALLOW_CUSTOM_AUTH",
+        "ALLOW_USER_SRP_AUTH",
+        "ALLOW_REFRESH_TOKEN_AUTH",
+        "ALLOW_USER_PASSWORD_AUTH"
+      ]
     }
   },
   "Tables": {
@@ -97,7 +82,6 @@
   "api-ui-hoster": {
     "resource_type": "s3_bucket",
     "acl": "public-read",
-    "location": "eu-central-1",
     "cors": [],
     "policy": {
       "Version": "2012-10-17",

@@ -30,17 +30,15 @@
     "resource_type": "iam_policy"
   },
   "processor-role": {
-    "predefined_policies": [
-      "AmazonDynamoDBFullAccess",
-      "AWSXRayDaemonWriteAccess"
-    ],
+    "predefined_policies": ["AWSXRayDaemonWriteAccess"],
     "principal_service": "lambda",
     "custom_policies": [
       "lambda-basic-execution"
     ],
-    "resource_type": "iam_role"
+    "resource_type": "iam_role",
+    "tracing_mode": "Active"
   },
-  "${target_table}": {
+  "Weather": {
     "resource_type": "dynamodb_table",
     "hash_key_name": "id",
     "hash_key_type": "S",

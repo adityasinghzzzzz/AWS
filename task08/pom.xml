@@ -5,12 +5,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>task08-group</groupId>
-    <artifactId>task08</artifactId>
-    <version>1.0.0</version>
+    <artifactId>weather-lambda-java</artifactId> <!-- Updated artifactId -->
+    <version>1.0-SNAPSHOT</version> <!-- Updated version -->
 
     <properties>
         <maven-shade-plugin.version>3.5.2</maven-shade-plugin.version>
-        <syndicate.java.plugin.version>1.11.1</syndicate.java.plugin.version>
+        <syndicate.java.plugin.version>1.13.0</syndicate.java.plugin.version>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -19,43 +19,26 @@
     </properties>
 
     <dependencies>
-        <!-- AWS dependencies-->
+        <!-- AWS dependencies -->
         <dependency>
             <groupId>com.amazonaws</groupId>
             <artifactId>aws-lambda-java-core</artifactId>
             <version>1.2.0</version>
         </dependency>
-        <dependency>
-            <groupId>com.amazonaws</groupId>
-            <artifactId>aws-lambda-java-events</artifactId>
-            <version>3.10.0</version>
-        </dependency>
-        <dependency>
-            <groupId>com.squareup.okhttp3</groupId>
-            <artifactId>okhttp</artifactId>
-            <version>4.12.0</version>
-        </dependency>
-        <dependency>
-            <groupId>com.google.code.gson</groupId>
-            <artifactId>gson</artifactId>
-            <version>2.10</version>
-        </dependency>
-        <dependency>
-            <groupId>org.epam.openapi</groupId>
-            <artifactId>open-meteo-api</artifactId>
-            <version>1.0-SNAPSHOT</version>
-            <scope>system</scope>
-            <systemPath>${basedir}/lib/open-meteo-api-1.0-SNAPSHOT.jar</systemPath>
-        </dependency>
-
-        <!--Syndicate annotations-->
+        <!-- Syndicate annotations -->
         <dependency>
             <groupId>net.sf.aws-syndicate</groupId>
             <artifactId>deployment-configuration-annotations</artifactId>
             <version>${syndicate.java.plugin.version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.task08</groupId>
+            <artifactId>lambda-layer</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/layer/java/lib/weather-lambda-java-1.0-SNAPSHOT.jar</systemPath>
+        </dependency>
     </dependencies>
-
 
     <build>
         <sourceDirectory>${src.dir}</sourceDirectory>
@@ -73,7 +56,7 @@
                     <packages>
                         <package>com.task08</package>
                     </packages>
-                    <fileName>${project.name}-${project.version}.jar</fileName>
+                    <fileName>${project.artifactId}-${project.version}.jar</fileName> <!-- Updated to match artifactId and version -->
                 </configuration>
                 <executions>
                     <execution>
@@ -103,6 +86,7 @@
                         </filter>
                     </filters>
                     <createDependencyReducedPom>false</createDependencyReducedPom>
+                    <finalName>weather-lambda-java-1.0-SNAPSHOT</finalName> <!-- Added to specify the final name -->
                 </configuration>
                 <executions>
                     <execution>
@@ -115,5 +99,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>

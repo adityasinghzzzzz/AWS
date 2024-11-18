@@ -1,4 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PropertiesComponent">{}</component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="91b85723-75df-4422-a165-78c9ec808c0d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deployment_resources.json" beforeDir="false" afterPath="$PROJECT_DIR$/deployment_resources.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsrc/main/java/com/task08/ApiHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/jsrc/main/java/com/task08/ApiHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/deployment_resources.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/deployment_resources.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task09/deployment_resources.json" beforeDir="false" afterPath="$PROJECT_DIR$/../task09/deployment_resources.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task09/jsrc/main/java/com/task09/ForecastData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task09/jsrc/main/java/com/task09/HourlyData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task09/jsrc/main/java/com/task09/HourlyUnits.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task09/jsrc/main/java/com/task09/Processor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../task09/jsrc/main/java/com/task09/Processor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task09/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../task09/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task09/target/deployment_resources.json" beforeDir="false" afterPath="$PROJECT_DIR$/../task09/target/deployment_resources.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task09/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../task09/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task09/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../task09/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task10/jsrc/main/java/com/task10/APIHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../task10/jsrc/main/java/com/task10/APIHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task10/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../task10/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task11/deployment_resources.json" beforeDir="false" afterPath="$PROJECT_DIR$/../task11/deployment_resources.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task11/export/8m5ppl8eu5_oas_v3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task11/jsrc/main/java/com/task11/APIHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../task11/jsrc/main/java/com/task11/APIHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task11/lib/request.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task11/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../task11/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task11/swagger_src/task11_api_ui/swagger_ui_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/../task11/swagger_src/task11_api_ui/swagger_ui_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task11/test.json" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2p0hwxqnnjt2ox01HrAVPftuqZC" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="91b85723-75df-4422-a165-78c9ec808c0d" name="Changes" comment="" />
+      <created>1731909144566</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1731909144566</updated>
+    </task>
+    <servers />
+  </component>
 </project>

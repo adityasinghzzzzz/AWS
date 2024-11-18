@@ -1,7 +1,7 @@
 {
   "processor" : {
     "name" : "processor",
-    "lambda_path" : "C:\\Users\\sakshikishor_kothurk\\AWS\\SyndicateTasks\\task09",
+    "lambda_path" : "C:\\Users\\chidananda_da\\demo2\\task09",
     "version" : "1.0.0",
     "func_name" : "com.task09.Processor",
     "deployment_package" : "task09-1.0.0.jar",
@@ -20,7 +20,6 @@
     },
     "tracing_mode" : "Active",
     "publish_version" : false,
-    "alias" : "${lambdas_alias_name}",
     "logs_expiration" : "${logs_expiration}",
     "snap_start" : "None",
     "url_config" : {

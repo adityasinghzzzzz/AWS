@@ -1,5 +1,4 @@
-package com.task09;
-
+package com.task09.Weather;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AllArgsConstructor;
@@ -7,14 +6,13 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.util.List;
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
+public  class HourlyUnits {
+    private String time;
+    private String temperature_2m;
 
-public class HourlyData {
-    private List<Number> temperature_2m;
-    private List<String> time;
 }
