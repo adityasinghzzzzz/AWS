@@ -1,6 +1,6 @@
-com\task10\ApiHandler$TableResponse.class
-com\task10\ApiHandler.class
-com\task10\ApiHandler$APIRequest.class
-com\task10\ApiHandler$Table.class
-com\task10\ApiHandler$Reservation.class
-com\task10\ApiHandler$ReservationResponse.class
+com\task10\APIHandler$Table.class
+com\task10\APIHandler.class
+com\task10\APIHandler$Reservation.class
+com\task10\APIHandler$ReservationResponse.class
+com\task10\APIHandler$APIRequest.class
+com\task10\APIHandler$TableResponse.class

@@ -1,9 +1,9 @@
 {
   "api_handler" : {
     "name" : "api_handler",
-    "lambda_path" : "C:\\Users\\chidananda_da\\demo2\\task10",
+    "lambda_path" : "C:\\Users\\sakshikishor_kothurk\\AWS\\SyndicateTasks\\task10",
     "version" : "1.0.0",
-    "func_name" : "com.task10.ApiHandler",
+    "func_name" : "com.task10.APIHandler",
     "deployment_package" : "task10-1.0.0.jar",
     "resource_type" : "lambda",
     "runtime" : "java17",
@@ -22,6 +22,7 @@
       "region" : "${region}"
     },
     "publish_version" : false,
+    "alias" : "${lambdas_alias_name}",
     "logs_expiration" : "${logs_expiration}",
     "snap_start" : "None"
   }
